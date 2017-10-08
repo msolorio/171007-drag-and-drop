@@ -22,9 +22,9 @@ body {
 }
 
 .item {
+  position: relative;
   min-width: 154px;
   max-width: 200px;
-  max-height: 120px;
   flex: 1;
   margin: 0 10px 10px 0;
   border: 4px solid #fff;
@@ -34,10 +34,15 @@ body {
   cursor: move;
 }
 
+.itemAmount {
+  position: absolute;
+  top: 8px;
+  right: 13px;
+}
+
 .cart {
   display: flex;
   flex-wrap: wrap;
-  align-content: start;
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
